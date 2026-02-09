@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto" data-theme="auto">
+
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="noindex, nofollow">
+<title>Dual Booting Ubuntu | My Hugo Site</title>
+<meta name="keywords" content="">
+<meta name="description" content="“Your PC doesn’t have to belong to just one operating system. Imagine being able to start your day writing code in a developer-friendly environment, and later unwind with your favorite Windows-only game — all without buying new hardware. This setup isn’t magic; it’s about learning how to make multiple operating systems share the same space, smoothly and efficiently.”
+What Are Ubuntu and Dual Booting?
+What is Ubuntu?
+Ubuntu is a Linux-based operating system built on the solid foundation of Debian, developed and maintained by Canonical Ltd. It’s designed to deliver a balance between performance, security, and usability — whether you’re running it on a personal computer, a server, or in the cloud making it a popular choice for beginners, developers, and professionals alike.">
+<meta name="author" content="">
+<link rel="canonical" href="http://localhost:1313/posts/dualbooting/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.da3211e5ef867bf2b75fd5a6515cfed7195c011e8ab735694e203810a827097b.css" integrity="sha256-2jIR5e&#43;Ge/K3X9WmUVz&#43;1xlcAR6KtzVpTiA4EKgnCXs=" rel="preload stylesheet" as="style">
+<link rel="icon" href="http://localhost:1313/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/favicon-32x32.png">
+<link rel="apple-touch-icon" href="http://localhost:1313/apple-touch-icon.png">
+<link rel="mask-icon" href="http://localhost:1313/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" hreflang="en" href="http://localhost:1313/posts/dualbooting/">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --code-block-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+                color-scheme: dark;
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .toc {
+                background: var(--entry);
+            }
+        }
+
+        @media (prefers-color-scheme: light) {
+            .list::-webkit-scrollbar-thumb {
+                border-color: var(--code-bg);
+            }
+        }
+
+    </style>
+</noscript>
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.querySelector("html").dataset.theme = 'dark';
+    } else if (localStorage.getItem("pref-theme") === "light") {
+       document.querySelector("html").dataset.theme = 'light';
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.querySelector("html").dataset.theme = 'dark';
+    } else {
+        document.querySelector("html").dataset.theme = 'light';
+    }
+
+</script>
+</head>
+<body id="top">
+    <header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="http://localhost:1313/" accesskey="h" title="My Hugo Site (Alt + H)">My Hugo Site</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <ul id="menu">
+        </ul>
+    </nav>
+</header>
+<main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+    
+    <h1 class="post-title entry-hint-parent">
+      Dual Booting Ubuntu
+    </h1>
+    <div class="post-meta"><span title='2026-02-02 13:59:51 +0500 PKT'>February 2, 2026</span>
+
+</div>
+  </header> 
+  <div class="post-content"><p><strong>“Your PC doesn’t have to belong to just one operating system. Imagine being able to start your day writing code in a developer-friendly environment, and later unwind with your favorite Windows-only game — all without buying new hardware. This setup isn’t magic; it’s about learning how to make multiple operating systems share the same space, smoothly and efficiently.”</strong></p>
+<h2 id="what-are-ubuntu-and-dual-booting">What Are Ubuntu and Dual Booting?<a hidden class="anchor" aria-hidden="true" href="#what-are-ubuntu-and-dual-booting">#</a></h2>
+<h2 id="what-is-ubuntu">What is Ubuntu?<a hidden class="anchor" aria-hidden="true" href="#what-is-ubuntu">#</a></h2>
+<p>Ubuntu is a <strong>Linux-based operating system</strong> built on the solid foundation of <strong>Debian</strong>, developed and maintained by Canonical Ltd. It’s designed to deliver a balance between performance, security, and usability — whether you’re running it on a personal computer, a server, or in the cloud making it a popular choice for beginners, developers, and professionals alike.</p>
+<h2 id="what-is-dual-booting">What is Dual booting?<a hidden class="anchor" aria-hidden="true" href="#what-is-dual-booting">#</a></h2>
+<p>Dual booting is the practice of installing two (or more) operating systems on a single computer and choosing which one to start each time the machine boots up. Instead of running one system inside another through virtualization, both operating systems are installed directly on separate disk partitions, allowing each to use the computer’s hardware natively for full performance.</p>
+<p>Now that you understand:</p>
+<ul>
+<li>What Ubuntu is</li>
+<li>What dual booting means</li>
+</ul>
+<p>Let’s get into the world of <strong>dual booting</strong> 🚀</p>
+<h2 id="step-1--installation-of-ubuntu-iso-image">STEP 1 : INSTALLATION OF UBUNTU ISO IMAGE<a hidden class="anchor" aria-hidden="true" href="#step-1--installation-of-ubuntu-iso-image">#</a></h2>
+<p>Firstly , we should download the Ubuntu 24.04.3 iso image , i did dual booting in Ubuntu 24.04.3 and I would suggest you to download this version</p>
+<p><img alt="Alt text for the image" loading="lazy" src="/images/s1.png"></p>
+<h2 id="step-2--create-free-disk-space-for-ubuntu">STEP 2 : Create Free Disk Space for Ubuntu<a hidden class="anchor" aria-hidden="true" href="#step-2--create-free-disk-space-for-ubuntu">#</a></h2>
+<p>After installing <strong>Ubuntu 24.04.3 iso image</strong> , divide your hard disk into two equal parts and that one hard disk which has more free space such as right click on that disk and there would be an option of shrink volume select that as a result you will see that a new disk will be created which will be used for Linux.</p>
+<p><img alt="Alt text for the image" loading="lazy" src="/images/s2.png"></p>
+<h2 id="step-3--install-rufus">STEP 3 : Install Rufus<a hidden class="anchor" aria-hidden="true" href="#step-3--install-rufus">#</a></h2>
+<p>Now before moving towards bootable USB , firstly install latest Rufus (mine is Rufus 4.11.exe)</p>
+<p><img alt="Alt text for the image" loading="lazy" src="/images/s3.png"></p>
+<h2 id="step-4--how-to-make-a-bootable-usb-">STEP 4 : HOW TO MAKE A BOOTABLE USB ?<a hidden class="anchor" aria-hidden="true" href="#step-4--how-to-make-a-bootable-usb-">#</a></h2>
+<ol>
+<li>
+<p>Insert your USB ( make sure that your USB is about 32 GB and it should be empty ) now open Rufus 4.11.exe .</p>
+</li>
+<li>
+<p>Select DEVICE option and carefully select that USB name that you want to make bootable</p>
+</li>
+<li>
+<p>Then in BOOT SELECTION select that Ubuntu 24.04.3 iso image</p>
+</li>
+<li>
+<p>Then click on SELECT</p>
+</li>
+</ol>
+<p>AFTER doing this , Check your partition scheme (whether it’s GPT or MBR) and select according to your partition scheme (How to know your partition scheme ? Here you would go to disk management and select on disk 0 and then select properties and in that you’d go to the volume section where you would see your partition scheme )</p>
+<p>Then select on START option which includes copying of iso files</p>
+<p><img alt="Alt text for the image" loading="lazy" src="/images/s4.png"></p>
+<h2 id="step-5--usb-ready-confirmation">STEP 5 : USB Ready Confirmation<a hidden class="anchor" aria-hidden="true" href="#step-5--usb-ready-confirmation">#</a></h2>
+<p>Once you see that <strong>READY</strong> message click on close (it means that your USB is successfully prepared for dual booting )</p>
+<h2 id="step-6--enter-advanced-startup">STEP 6 : Enter Advanced Startup<a hidden class="anchor" aria-hidden="true" href="#step-6--enter-advanced-startup">#</a></h2>
+<p>Click on WINDOWS+l which will lock your screen. Now press SHIFT and SHUT DOWN your PC</p>
+<h2 id="step-7--enter-uefi-firmware-settings">STEP 7 : Enter UEFI Firmware Settings<a hidden class="anchor" aria-hidden="true" href="#step-7--enter-uefi-firmware-settings">#</a></h2>
+<p>Open your PC here you would see :</p>
+<ol>
+<li>
+<p>Choose an option , you should select on TROUBLE SHOOT</p>
+</li>
+<li>
+<p>After that click on ADVANCED OPTIONS</p>
+</li>
+<li>
+<p>Here you should click on UEFI FIRMWARE SETTINGS , then click on restart</p>
+</li>
+<li>
+<p>Click on USB HDD and move that to the top</p>
+</li>
+<li>
+<p>Then press ENTER.</p>
+</li>
+</ol>
+<h2 id="step-8--start-ubuntu-installer">STEP 8 : Start Ubuntu Installer<a hidden class="anchor" aria-hidden="true" href="#step-8--start-ubuntu-installer">#</a></h2>
+<p>Select <strong>TRY OR INSTALL UBUNTU</strong></p>
+<p><img alt="Alt text for the image" loading="lazy" src="/images/s5.png"></p>
+<h2 id="step-9--ubuntu-installation-settings">STEP 9 : Ubuntu Installation Settings<a hidden class="anchor" aria-hidden="true" href="#step-9--ubuntu-installation-settings">#</a></h2>
+<p>After this , the ubuntu will start installing</p>
+<ol>
+<li>
+<p>Select your keyboard layout</p>
+</li>
+<li>
+<p>Select WI-Fi</p>
+</li>
+<li>
+<p>Interactive installation</p>
+</li>
+<li>
+<p>Default installation</p>
+</li>
+<li>
+<p>Install third-party software for graphics and Wi-Fi hardware</p>
+</li>
+<li>
+<p>Select manual partitioning and create a free space for Ubuntu</p>
+</li>
+<li>
+<p>After this , Enter your name , username and password</p>
+</li>
+</ol>
+<h2 id="step-10--finish-installation">STEP 10 : Finish Installation<a hidden class="anchor" aria-hidden="true" href="#step-10--finish-installation">#</a></h2>
+<p>Click <strong>Install</strong>
+Once completed, click <strong>Close</strong></p>
+<p>🎉 <strong>Your dual boot setup is complete!</strong></p>
+<h2 id="final-words">Final Words<a hidden class="anchor" aria-hidden="true" href="#final-words">#</a></h2>
+<p>This is the correct and safe way to dual boot <strong>Ubuntu with Windows</strong>.
+Take your time, follow each step carefully, and you’ll be running two operating systems on one machine like a pro.</p>
+<p><strong>Good luck, and welcome to the Linux world 🐧</strong></p>
+
+
+  </div>
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+    </ul>
+  </footer>
+</article>
+    </main>
+    
+<footer class="footer">
+        <span>&copy; 2026 <a href="http://localhost:1313/">My Hugo Site</a></span> · 
+
+    <span>
+        Powered by
+        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
+        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
+    </span>
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu');
+    if (menu) {
+        
+        const scrollPosition = localStorage.getItem("menu-scroll-position");
+        if (scrollPosition) {
+            menu.scrollLeft = parseInt(scrollPosition, 10);
+        }
+        
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        const html = document.querySelector("html");
+        if (html.dataset.theme === "dark") {
+            html.dataset.theme = 'light';
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            html.dataset.theme = 'dark';
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+</body>
+
+</html>

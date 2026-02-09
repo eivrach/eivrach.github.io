@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto" data-theme="auto">
+
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="noindex, nofollow">
+<title>LINUX COMMANDS | My Hugo Site</title>
+<meta name="keywords" content="">
+<meta name="description" content="The Linux terminal is a powerful tool that lets you control your system using text commands. It may look complicated at first, but once you learn a few commands, you’ll feel like a pro.
+COMMANDS IN LINUX :
+
+
+First and most importantly go to your home directory through this command.
+cd ..
+
+
+After this enter this command :
+wget http://bit.ly/cli-files
+
+
+
+wget (World Wide Web Get) :
+It is a command line open in Linux and it is also an open source utility that allows you to retrieve (download) contents from the web servers through http,https or ftp.">
+<meta name="author" content="">
+<link rel="canonical" href="http://localhost:1313/posts/linuxcommands/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.da3211e5ef867bf2b75fd5a6515cfed7195c011e8ab735694e203810a827097b.css" integrity="sha256-2jIR5e&#43;Ge/K3X9WmUVz&#43;1xlcAR6KtzVpTiA4EKgnCXs=" rel="preload stylesheet" as="style">
+<link rel="icon" href="http://localhost:1313/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/favicon-32x32.png">
+<link rel="apple-touch-icon" href="http://localhost:1313/apple-touch-icon.png">
+<link rel="mask-icon" href="http://localhost:1313/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" hreflang="en" href="http://localhost:1313/posts/linuxcommands/">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --code-block-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+                color-scheme: dark;
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .toc {
+                background: var(--entry);
+            }
+        }
+
+        @media (prefers-color-scheme: light) {
+            .list::-webkit-scrollbar-thumb {
+                border-color: var(--code-bg);
+            }
+        }
+
+    </style>
+</noscript>
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.querySelector("html").dataset.theme = 'dark';
+    } else if (localStorage.getItem("pref-theme") === "light") {
+       document.querySelector("html").dataset.theme = 'light';
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.querySelector("html").dataset.theme = 'dark';
+    } else {
+        document.querySelector("html").dataset.theme = 'light';
+    }
+
+</script>
+</head>
+<body id="top">
+    <header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="http://localhost:1313/" accesskey="h" title="My Hugo Site (Alt + H)">My Hugo Site</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <ul id="menu">
+        </ul>
+    </nav>
+</header>
+<main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+    
+    <h1 class="post-title entry-hint-parent">
+      LINUX COMMANDS
+    </h1>
+    <div class="post-meta"><span title='2026-02-04 13:32:11 +0500 PKT'>February 4, 2026</span>
+
+</div>
+  </header> 
+  <div class="post-content"><p><strong>The Linux terminal is a powerful tool that lets you control your system using text commands. It may look complicated at first, but once you learn a few commands, you’ll feel like a pro.</strong></p>
+<h2 id="commands-in-linux-">COMMANDS IN LINUX :<a hidden class="anchor" aria-hidden="true" href="#commands-in-linux-">#</a></h2>
+<ol>
+<li>
+<p>First and most importantly go to your home directory through this command.
+<strong>cd ..</strong></p>
+</li>
+<li>
+<p>After this enter this command :
+<strong>wget <a href="http://bit.ly/cli-files">http://bit.ly/cli-files</a></strong></p>
+</li>
+</ol>
+<p><img alt="Alt text for the image" loading="lazy" src="/images/A1.png"></p>
+<h3 id="wget-world-wide-web-get-">wget (World Wide Web Get) :<a hidden class="anchor" aria-hidden="true" href="#wget-world-wide-web-get-">#</a></h3>
+<p>It is a command line open in Linux and it is also an open source utility that allows you to retrieve (download) contents from the web servers through http,https or ftp.</p>
+<ol start="3">
+<li>
+<p>Since its a zip file so you have to unzip it enter the given command.
+<strong>unzip cli-files</strong></p>
+</li>
+<li>
+<p>After this enter the given commands :
+<strong>ls</strong> will list the current working directory.</p>
+</li>
+<li>
+<p>Then enter command
+<strong>cd cli-files-0.0</strong></p>
+</li>
+</ol>
+<p>which means change your current working directory to <strong>cli-files-0.0</strong>.</p>
+<ol start="6">
+<li>
+<p>After this enter <strong>ls</strong> command again.</p>
+</li>
+<li>
+<p>Then make a directory through the given command.
+<strong>mkdir <!-- raw HTML omitted --></strong></p>
+</li>
+</ol>
+<p><strong>mkdir</strong> means make a new directory (folder).</p>
+<ol start="8">
+<li>
+<p>Then change your directory to that new directory.
+<strong>cd <!-- raw HTML omitted --></strong></p>
+</li>
+<li>
+<p>Then enter command <strong>ls</strong> which will list nothing because that folder is empty right now.</p>
+</li>
+</ol>
+<p><img alt="Alt text for the image" loading="lazy" src="/images/A2.png"></p>
+<p>After this clear your terminal through <strong>clear</strong> command and change your directory to the home folder through either one of these commands</p>
+<ol>
+<li>
+<p><strong>cd ..</strong></p>
+</li>
+<li>
+<p><strong>cd -</strong></p>
+</li>
+<li>
+<p>Then make a new directory again through this commands
+<strong>mkdir -p d1/d2/d3</strong>
+It will make directories one by one and no error will appear on the terminal.</p>
+</li>
+<li>
+<p>Then check them one by one through these commands</p>
+</li>
+</ol>
+<ul>
+<li><strong>cd d1</strong></li>
+<li><strong>ls</strong></li>
+<li><strong>cd d2</strong></li>
+<li><strong>ls</strong></li>
+<li><strong>cd d3</strong></li>
+<li><strong>ls</strong></li>
+</ul>
+<p>That <strong>cd d3</strong> will show nothing after you give <strong>ls</strong> command because it is empty.</p>
+<p><img alt="Alt text for the image" loading="lazy" src="/images/A3.png"></p>
+<ol start="12">
+<li>Then enter command
+<strong>cd ../../../</strong></li>
+</ol>
+<p>This will take you to your home folder.</p>
+<ol start="13">
+<li>Now we want to see the directory structure so we enter the given command.
+<strong>ls -R d1</strong></li>
+</ol>
+<ul>
+<li>R is a switch command and it shows directory d1 recursively.</li>
+</ul>
+<h2 id="working-with-files-">WORKING WITH FILES :<a hidden class="anchor" aria-hidden="true" href="#working-with-files-">#</a></h2>
+<p>Enter command <strong>pwd</strong> which means print working directory. It will tell you where exactly you are.</p>
+<p>After this , enter command <strong>touch file.txt</strong> to create a new empty file.
+Then enter command <strong>ls</strong> which will list all the files.</p>
+<ul>
+<li>
+<p>Enter the given command :
+<strong>cat file.txt</strong></p>
+</li>
+<li>
+<p>cat refers to concatenation which means joining files or text. Or it also means open a file and showing its words on the terminal.</p>
+</li>
+</ul>
+<p>Then enter command <strong>cd lesson-01</strong> which will change your current working directory to lesson-01.</p>
+<ul>
+<li>
+<p>Enter command <strong>ls</strong>.</p>
+</li>
+<li>
+<p>Then enter command :
+<strong>cat dummy-file.txt</strong></p>
+</li>
+</ul>
+<p>It will show all the contents that are in the <strong>dummy-file.txt</strong> and will display them on the terminal.</p>
+<p>After this we want to know the word count of that <strong>dummy-file.txt</strong>. so enter command :
+<strong>wc</strong></p>
+<ul>
+<li>wc : It will counts words , lines and bytes in a file.</li>
+</ul>
+<p><img alt="Alt text for the image" loading="lazy" src="/images/A4.png"></p>
+<p>If you came across a command &amp; you don’t know what that means you can enter this meta command (commands that control the shell)</p>
+<p><strong>whatis <!-- raw HTML omitted --></strong></p>
+<ul>
+<li>This meta command gives a one line description of a command.</li>
+</ul>
+<p>But when your database is not installed or updated then this will show an error like</p>
+<p><strong>nothing appropriate</strong> or <strong>whatis database not found</strong> or <strong>no output at all</strong>.
+For updating the database use command :
+<strong>sudo mandb</strong></p>
+<ul>
+<li>This will update your manual database (Detailed documents explaining commands, files &amp; system calls).</li>
+</ul>
+<p>For installing the database use command :
+<strong>sudo apt install man-db</strong></p>
+<p><img alt="Alt text for the image" loading="lazy" src="/images/A5.png"></p>
+<p>After this when i enter command <strong>whatis cd</strong> it doesn’t show any error.</p>
+<p><img alt="Alt text for the image" loading="lazy" src="/images/A6.png"></p>
+<p>And if you want to know each and everything about a command you can enter this command :
+<strong>man commands</strong>
+AND <strong>man</strong> : stands for manual.
+Press <strong>q</strong> to quit.</p>
+<p><img alt="Alt text for the image" loading="lazy" src="/images/A7.png"></p>
+<h2 id="four-ways-to-enter-the-same-command-that-youve-previously-entered">FOUR WAYS TO ENTER THE SAME COMMAND THAT YOU’VE PREVIOUSLY ENTERED:<a hidden class="anchor" aria-hidden="true" href="#four-ways-to-enter-the-same-command-that-youve-previously-entered">#</a></h2>
+<ol>
+<li>Up arrow key.</li>
+<li><strong>Ctrl + R</strong> and type part it’ll fill itself.</li>
+<li><strong>history</strong> —&gt; full list along with numbers.</li>
+<li>bang like <strong>!<!-- raw HTML omitted --></strong>.</li>
+</ol>
+<h2 id="pipes">PIPES<a hidden class="anchor" aria-hidden="true" href="#pipes">#</a></h2>
+<p>Firstly , enter command <strong>pwd</strong> and make sure that you are in the working directory of cli-files-0.0.</p>
+<p>After that enter command <strong>cd lesson-02</strong> and change your current working directory to lesson-02. You’ll get iris.csv file . Npw enter this command :
+<strong>cat iris.csv</strong>
+-To see the contents of iris.csv file.
+-You’ll get the dataset of classes belonging to three different species of flowers.</p>
+<p>After this enter command <strong>wc iriis.csv</strong> which will count the words , lines and bytes.</p>
+<p>Now change your directory to lesson-02 through <strong>cd lesson-02</strong> .Then enter <strong>ls</strong> where you’ll see iris.csv file</p>
+<p>Change your directory to iris.csv file <strong>cd iris.csv</strong>. It has all the information related to flowers .</p>
+<p>For reading the contents of the iris.csv file enter this command
+<strong>cat iris.csv</strong></p>
+<ul>
+<li>It will display 150 flower lines .</li>
+</ul>
+<p>Then <strong>wc iris.csv</strong></p>
+<ul>
+<li>Since it’s an extremely large file so enter this command
+<strong>head iris.csv</strong></li>
+</ul>
+<p><img alt="Alt text for the image" loading="lazy" src="/images/A8.png"></p>
+<p>This command will print the first 10 lines of the iris.csv file on the terminal . It is useful because some files are big and it helps you to sneak peak and count without reading everything .</p>
+<h3 id="pipes----">Pipes ( | ) :<a hidden class="anchor" aria-hidden="true" href="#pipes----">#</a></h3>
+<p>Tools that take the output of one command and send it as input to another command.</p>
+<p>Enter command :
+<strong>cat iris.csv | wc</strong></p>
+<ul>
+<li>this command will take output of cat iris.csv and send it as input to wc which will display word count.</li>
+</ul>
+<h3 id="grep-">Grep :<a hidden class="anchor" aria-hidden="true" href="#grep-">#</a></h3>
+<p>Find specific lines , words or patterns inside files or text .</p>
+<p><strong>Enter given commands :</strong></p>
+<ol>
+<li><strong>grep &ldquo;setosa&rdquo; iris.csv</strong></li>
+<li><strong>cat iris.csv | wc</strong></li>
+<li><strong>cat iris.csv | grep &ldquo;setosa&rdquo;</strong></li>
+<li><strong>cat iris.csv | grep &ldquo;setosa&rdquo; | wc</strong></li>
+<li><strong>cat iris.csv | grep &ldquo;3.5&rdquo;</strong></li>
+<li><strong>cat iris.csv | grep &ldquo;setosa&rdquo; | grep &ldquo;3.5&rdquo;</strong></li>
+<li><strong>cat iris.csv | grep &ldquo;setosa&rdquo; | grep &ldquo;3.5&rdquo; | wc</strong></li>
+</ol>
+<p><img alt="Alt text for the image" loading="lazy" src="/images/A9.png"></p>
+<p>-<strong>grep setosa</strong> will only print those flower names which has <strong>setosa</strong> in their name.</p>
+<p>Now change your directory to lesson-03 and do ls after this enter command .</p>
+<ol>
+<li><strong>cd ..</strong></li>
+<li><strong>cd lesson-03</strong></li>
+<li><strong>ls</strong></li>
+<li><strong>echo &ldquo;something&rdquo;</strong></li>
+<li><strong>cat temp</strong></li>
+<li><strong>echo &ldquo;something&rdquo; &gt; temp</strong></li>
+<li><strong>ls temp</strong></li>
+<li><strong>cat temp</strong></li>
+<li><strong>cat iris.csv | grep &ldquo;setosa&rdquo;</strong></li>
+<li><strong>cat iris.csv | grep &ldquo;setosa&rdquo; | setosa.csv</strong></li>
+<li><strong>cat iris.csv | grep &ldquo;setosa&rdquo; &gt; setosa.csv</strong></li>
+</ol>
+<ul>
+<li><strong>echo</strong> means to output something to the console.</li>
+<li><strong>cat temp</strong> to read every thing in that file.</li>
+<li><strong>&gt;</strong> stands for redirecting which means instead of showing output to the console it redirects it to the file.</li>
+</ul>
+<h3 id="for-renaming-a-file-">For renaming a file :<a hidden class="anchor" aria-hidden="true" href="#for-renaming-a-file-">#</a></h3>
+<p>Use command <strong>mv</strong> which means move and most of the time it is used for renaming a file.</p>
+<h3 id="for-copying-a-file-">For copying a file :<a hidden class="anchor" aria-hidden="true" href="#for-copying-a-file-">#</a></h3>
+<p>Enter command <strong>cp original file new file</strong>.
+For renaming and copying a directory :
+Enter command <strong>mv file directory/file</strong>. and <strong>cp -r</strong> directory.</p>
+<h3 id="for-removing-file-and-directory-">For removing file and directory :<a hidden class="anchor" aria-hidden="true" href="#for-removing-file-and-directory-">#</a></h3>
+<p><strong>file : rm file</strong>
+directory : <strong>rmdir directory</strong> or <strong>rm directory/file</strong></p>
+<h3 id="conclusion-">CONCLUSION :<a hidden class="anchor" aria-hidden="true" href="#conclusion-">#</a></h3>
+<p>Linux commands give users fast and powerful control over their system. With simple commands like <strong>ls</strong> , <strong>cd</strong> , <strong>mv</strong> , <strong>cp</strong> , and <strong>rm</strong>, you can navigate, manage files, and organize your workspace. Tools like <strong>cat</strong> , <strong>echo</strong> , <strong>grep</strong> , <strong>pipes ( | )</strong>, and <strong>redirection (&gt;)</strong> help you handle and filter text easily. Meta-commands and shell shortcuts make work faster and more efficient. Overall, learning Linux commands improves productivity and gives you complete control over the operating system.</p>
+
+
+  </div>
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+    </ul>
+  </footer>
+</article>
+    </main>
+    
+<footer class="footer">
+        <span>&copy; 2026 <a href="http://localhost:1313/">My Hugo Site</a></span> · 
+
+    <span>
+        Powered by
+        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
+        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
+    </span>
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu');
+    if (menu) {
+        
+        const scrollPosition = localStorage.getItem("menu-scroll-position");
+        if (scrollPosition) {
+            menu.scrollLeft = parseInt(scrollPosition, 10);
+        }
+        
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        const html = document.querySelector("html");
+        if (html.dataset.theme === "dark") {
+            html.dataset.theme = 'light';
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            html.dataset.theme = 'dark';
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+</body>
+
+</html>
