@@ -1,35 +1,28 @@
 +++
-title: "Home"
-date: 2026-02-11
+title = "Home"
+draft = false
 +++
 
-# 👋 Hey, I’m Ayesha
+# Hi, I’m Ayesha 👋
 
-1. Enthusiastic and Passionate about Tech. 
-2. Explorer of the Web
+I’m a **CS Student**, passionate about building exploring tech, and sharing what I learn.
 
-Welcome to my corner of the internet — a place where I document what I learn, build what I imagine, and share what I discover.
+---
 
-## 🧠 Who Am I?
+## 🧠 Skills
 
-I’m someone passionate about technology and eager to learn it in depth.
+* **Programming:** C, C++
+* **Tools & Platforms:** Git, GitHub, Linux
 
-* 💻 Building fast websites with **Hugo**
-* 📝 Writing technical blogs
-* ⚙️ Exploring open source
-* 🌍 Learning in public
+---
 
-I believe the best way to grow is to **build + share**.
+## 📝 Latest Blogs
 
-## 🚀 What I’m Doing Now
+{{< recent-posts count="3" >}}
 
-1. Learning about technology.
-2. Publishing dev blogs.
-3. Exploring new tools and technologies to expand my skills.
+---
 
-## 🌐 Find Me Online
+## 🌐 Connect With Me
 
-1. 💼 LinkedIn → https://linkedin.com/in/ayesha-khan
-2. 🐙 GitHub → https://github.com/eivrach  
-
-> “Learn in public. Build in public. Grow in public.”
+• [GitHub](https://github.com/eivrach)
+• [LinkedIn](https://linkedin.com/in/ayesha-khan-41348538a)

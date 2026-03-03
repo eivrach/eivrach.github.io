@@ -1,18 +1,16 @@
 <!DOCTYPE html>
-<html lang="en" dir="auto" data-theme="auto">
+<html lang="en" dir="auto">
 
 <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta name="robots" content="noindex, nofollow">
-<title>Firstpost | Ayesha Blog</title>
+<title>Archives | eivrach</title>
 <meta name="keywords" content="">
-<meta name="description" content="This is where it begins ✨
-Hi, I’m Ayesha — and this is my little corner of the internet.I built this site using Hugo, a fast and minimal static site generator.
-No ads. No noise. Just thoughts, learning, and curiosity.">
-<meta name="author" content="Ayesha Khan">
-<link rel="canonical" href="http://localhost:1313/posts/firstpost/">
-<link crossorigin="anonymous" href="/assets/css/stylesheet.da3211e5ef867bf2b75fd5a6515cfed7195c011e8ab735694e203810a827097b.css" integrity="sha256-2jIR5e&#43;Ge/K3X9WmUVz&#43;1xlcAR6KtzVpTiA4EKgnCXs=" rel="preload stylesheet" as="style">
+<meta name="description" content="archives">
+<meta name="author" content="">
+<link rel="canonical" href="http://localhost:1313/archives/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.93f625d739f1d6a5c6f20c146bc6a8d26b233492b34b2220c54b12fd46a04ded.css" integrity="sha256-k/Yl1znx1qXG8gwUa8ao0msjNJKzSyIgxUsS/UagTe0=" rel="preload stylesheet" as="style">
 <link rel="icon" href="http://localhost:1313/favicon.ico">
 <link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/favicon-16x16.png">
 <link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/favicon-32x32.png">
@@ -20,7 +18,7 @@ No ads. No noise. Just thoughts, learning, and curiosity.">
 <link rel="mask-icon" href="http://localhost:1313/safari-pinned-tab.svg">
 <meta name="theme-color" content="#2e2e33">
 <meta name="msapplication-TileColor" content="#2e2e33">
-<link rel="alternate" hreflang="en" href="http://localhost:1313/posts/firstpost/">
+<link rel="alternate" hreflang="en" href="http://localhost:1313/archives/">
 <noscript>
     <style>
         #theme-toggle,
@@ -29,56 +27,21 @@ No ads. No noise. Just thoughts, learning, and curiosity.">
         }
 
     </style>
-    <style>
-        @media (prefers-color-scheme: dark) {
-            :root {
-                --theme: rgb(29, 30, 32);
-                --entry: rgb(46, 46, 51);
-                --primary: rgb(218, 218, 219);
-                --secondary: rgb(155, 156, 157);
-                --tertiary: rgb(65, 66, 68);
-                --content: rgb(196, 196, 197);
-                --code-block-bg: rgb(46, 46, 51);
-                --code-bg: rgb(55, 56, 62);
-                --border: rgb(51, 51, 51);
-                color-scheme: dark;
-            }
-
-            .list {
-                background: var(--theme);
-            }
-
-            .toc {
-                background: var(--entry);
-            }
-        }
-
-        @media (prefers-color-scheme: light) {
-            .list::-webkit-scrollbar-thumb {
-                border-color: var(--code-bg);
-            }
-        }
-
-    </style>
 </noscript>
+</head>
+
+<body class="list dark" id="top">
 <script>
-    if (localStorage.getItem("pref-theme") === "dark") {
-        document.querySelector("html").dataset.theme = 'dark';
-    } else if (localStorage.getItem("pref-theme") === "light") {
-       document.querySelector("html").dataset.theme = 'light';
-    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
-        document.querySelector("html").dataset.theme = 'dark';
-    } else {
-        document.querySelector("html").dataset.theme = 'light';
+    if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
     }
 
 </script>
-</head>
-<body id="top">
-    <header class="header">
+
+<header class="header">
     <nav class="nav">
         <div class="logo">
-            <a href="http://localhost:1313/" accesskey="h" title="Ayesha Blog (Alt + H)">Ayesha Blog</a>
+            <a href="http://localhost:1313/" accesskey="h" title="eivrach (Alt + H)">eivrach</a>
             <div class="logo-switches">
                 <button id="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
                     <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
@@ -103,37 +66,79 @@ No ads. No noise. Just thoughts, learning, and curiosity.">
             </div>
         </div>
         <ul id="menu">
+            <li>
+                <a href="http://localhost:1313/tags/" title="Tags">
+                    <span>Tags</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/posts/" title="Posts">
+                    <span>Posts</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/search" title="Search (Alt &#43; /)" accesskey=/>
+                    <span>Search</span>
+                </a>
+            </li>
         </ul>
     </nav>
 </header>
 <main class="main">
 
-<article class="post-single">
-  <header class="post-header">
-    
-    <h1 class="post-title entry-hint-parent">
-      Firstpost
-    </h1>
-    <div class="post-meta"><span title='2026-02-01 12:33:31 +0500 PKT'>February 1, 2026</span>&nbsp;·&nbsp;<span>Ayesha Khan</span>
+<header class="page-header">
+  <h1>
+    Archives
+  </h1>
+</header>
 
-</div>
-  </header> 
-  <div class="post-content"><h2 id="this-is-where-it-begins-">This is where it begins ✨<a hidden class="anchor" aria-hidden="true" href="#this-is-where-it-begins-">#</a></h2>
-<p>Hi, I’m <strong>Ayesha</strong> — and this is my little corner of the internet.I built this site using <strong>Hugo</strong>, a fast and minimal static site generator.
-No ads. No noise. Just thoughts, learning, and curiosity.</p>
+<div class="archive-month">
+  <h3 class="archive-month-header" id="2026-February">
+    <a class="archive-header-link" href="#2026-February">February</a>
+    <sup class="archive-count">&nbsp;1</sup>
+  </h3>
 
+  <div class="archive-posts">
+
+    <div class="archive-entry">
+      <h3 class="archive-entry-title entry-hint-parent">Firstpost
+      </h3>
+      <div class="archive-meta"><span title="2026-02-27 09:43:45 +0500 PKT">February 27, 2026</span>&nbsp;·&nbsp;1 min</div>
+      <a class="entry-link" aria-label="post link to Firstpost" href="http://localhost:1313/posts/firstpost/"></a>
+    </div>
 
   </div>
-
-  <footer class="post-footer">
-    <ul class="post-tags">
-    </ul>
-  </footer>
-</article>
+</div>
+  <div class="archive-month">
+    <h3 class="archive-month-header" id="2025-September">
+      <a class="archive-header-link" href="#2025-September">September</a>
+      <sup class="archive-count">&nbsp;3</sup>
+    </h3>
+    <div class="archive-posts">
+      <div class="archive-entry">
+        <h3 class="archive-entry-title entry-hint-parent">LINUX COMMANDS
+        </h3>
+        <div class="archive-meta"><span title='2025-10-17 09:30:09 +0500 PKT'>September 17, 2025</span>&nbsp;·&nbsp;4 min</div>
+        <a class="entry-link" aria-label="post link to LINUX COMMANDS" href="http://localhost:1313/posts/linux-commands/"></a>
+      </div>
+      <div class="archive-entry">
+        <h3 class="archive-entry-title entry-hint-parent">GIT AND GITHUB GUIDE
+        </h3>
+        <div class="archive-meta"><span title='2025-10-10 09:43:45 +0500 PKT'>September 10, 2025</span>&nbsp;·&nbsp;3 min</div>
+        <a class="entry-link" aria-label="post link to GIT AND GITHUB GUIDE" href="http://localhost:1313/posts/git-and-github-guide/"></a>
+      </div>
+      <div class="archive-entry">
+        <h3 class="archive-entry-title entry-hint-parent">HOW TO DO DUAL BOOTING ON WINDOWS 10
+        </h3>
+        <div class="archive-meta"><span title='2025-10-03 09:43:45 +0500 PKT'>September 03, 2025</span>&nbsp;·&nbsp;1 min</div>
+        <a class="entry-link" aria-label="post link to HOW TO DO DUAL BOOTING ON WINDOWS 10" href="http://localhost:1313/posts/how-to-do-dual-booting-on-windows10/"></a>
+      </div>
+    </div>
+  </div>
     </main>
     
 <footer class="footer">
-        <span>&copy; 2026 <a href="http://localhost:1313/">Ayesha Blog</a></span> · 
+        <span>&copy; 2026 <a href="http://localhost:1313/">eivrach</a></span> · 
 
     <span>
         Powered by
@@ -148,14 +153,9 @@ No ads. No noise. Just thoughts, learning, and curiosity.</p>
 </a>
 
 <script>
-    let menu = document.getElementById('menu');
+    let menu = document.getElementById('menu')
     if (menu) {
-        
-        const scrollPosition = localStorage.getItem("menu-scroll-position");
-        if (scrollPosition) {
-            menu.scrollLeft = parseInt(scrollPosition, 10);
-        }
-        
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
         menu.onscroll = function () {
             localStorage.setItem("menu-scroll-position", menu.scrollLeft);
         }
@@ -196,12 +196,11 @@ No ads. No noise. Just thoughts, learning, and curiosity.</p>
 </script>
 <script>
     document.getElementById("theme-toggle").addEventListener("click", () => {
-        const html = document.querySelector("html");
-        if (html.dataset.theme === "dark") {
-            html.dataset.theme = 'light';
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
             localStorage.setItem("pref-theme", 'light');
         } else {
-            html.dataset.theme = 'dark';
+            document.body.classList.add('dark');
             localStorage.setItem("pref-theme", 'dark');
         }
     })

@@ -1,4 +1,64 @@
-baseURL = 'https://eivrach.github.io'
-languageCode = 'en-us'
-title = 'My Hugo Site'
-theme = 'PaperMod'
+baseURL = "https://eivrach.github.io/"
+languageCode = "en-us"
+title = "eivrach"
+theme = "PaperMod"
+
+
+[params.profileMode]
+    enabled = true
+    title = "Ayesha Khan"
+    subtitle = "Breaking Down Bytes & Bits"
+    imageUrl = "profilepic.jpeg"
+    imageTitle = "Profile Picture"
+    imageWidth = 300
+    imageHeight = 300
+
+[[params.profileMode.buttons]]
+    name = "About Me"
+    url = "/about"
+
+[[params.profileMode.buttons]]
+    name = "Archives"
+    url = "/archives"
+
+[[menu.main]]
+    name = "Tags"
+    identifier = "tags"
+    weight = 300
+    url = "/tags/"
+    [[menu.main]]
+    identifier = "posts"
+    name       = "Posts"
+    url        = "/posts/"
+
+[[menu.main]]
+  name = "Search"
+  url = "/search"
+
+[params]
+    dateform        = "Jan 2, 2006"
+    dateformShort   = "Jan 2"
+    dateformNum     = "2006-01-02"
+    dateformNumTime = "2006-01-02 15:04"
+    ShowToc =  true
+    ShowReadingTime = true
+    ShowBreadCrumbs = true
+    ShowCodeCopyButtons = true
+    taglist = true
+    defaultTheme = 'dark'
+    lazyLoadImages = true  # Improves page load speed
+
+[[params.socialIcons]]
+    name = "github"
+    url = "https://github.com/eivrach"
+
+[[params.socialIcons]]
+    name = "linkedin"
+    url = "https://www.linkedin.com/in/ayesha-khan-41348538a"
+
+[outputs]
+  home = [ "HTML", "RSS", "JSON" ]
+
+
+
+
