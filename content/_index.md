@@ -8,7 +8,7 @@ title = 'About Me'
 ## 👩‍💻 Introduction: 
 - I’m a passionate **COMPUTER SCIENCE STUDENT** who loves learning about programming, problem-solving, and how things work behind the scenes in the world of computing. 
 - This blog is my space to document what I learn and share useful insights with others who are also curious about technology.
-- Also part of **COLAB** a research lab where innovation, learning, and curiosity drive the work we do.</li>
+- Also part of **COLAB** a research lab where innovation, learning, and curiosity drive the work we do.
 
 --- 
 
@@ -24,7 +24,6 @@ title = 'About Me'
 
 ---
 ## 🔗 Connect with me :
-- 📧 **[Email](khanaysha1177@gmail.com)**
 - 🌐 **[GitHub](https://github.com/eivrach)** 
 - 💼 **[LinkedIn](https://www.linkedin.com/in/ayesha-khan/)**
 

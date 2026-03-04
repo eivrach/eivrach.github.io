@@ -23,7 +23,6 @@ title = 'About Me'
 
 ---
 ## 📬 Connect with me :
-- 📧 **[Email](khanaysha1177@gmail.com)**
 - 🌐 **[GitHub](https://github.com/eivrach)** 
 - 💼 **[LinkedIn](https://www.linkedin.com/in/ayesha-khan-41348538a/)**
 
