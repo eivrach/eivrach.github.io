@@ -4,27 +4,26 @@ draft = false
 title = 'About Me'
 +++
 
-# Hello! It's Ayesha Khan (aka eivrach)👋
-## 👩‍💻 Introduction: 
+# Hi! It's Ayesha Khan (aka eivrach)
+## Introduction: 
 - I’m a passionate **COMPUTER SCIENCE STUDENT** who loves learning about programming, problem-solving, and how things work behind the scenes in the world of computing. 
 - This blog is my space to document what I learn and share useful insights with others who are also curious about technology.
 - Also part of **COLAB** a research lab where innovation, learning, and curiosity drive the work we do.</li>
 
 --- 
 
-## 🛠️ Projects:
+## 💻 Projects:
 - Alpine Bear Inventory Management System.
 - Personal Potfolio website.
 
 --- 
-## ✍️ About this site:
+## 📝 About this site:
 - On this site, you will find content related to my journey in learning technology and computer science. 
 - I am also enthusiastic about **tech** , **Linux**, **coding**, and the tools that make all of it just a bit more efficient.
-- Most of what I write is rooted in hands-on learning—small guides, notes, and how-to.
 
 ---
-## 🔗 Connect with me :
+## 📬 Connect with me :
 - 📧 **[Email](khanaysha1177@gmail.com)**
 - 🌐 **[GitHub](https://github.com/eivrach)** 
-- 💼 **[LinkedIn](https://www.linkedin.com/in/ayesha-khan/)**
+- 💼 **[LinkedIn](https://www.linkedin.com/in/ayesha-khan-41348538a/)**
 

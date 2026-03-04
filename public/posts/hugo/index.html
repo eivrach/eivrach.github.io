@@ -5,11 +5,25 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta name="robots" content="noindex, nofollow">
-<title>404 Page not found | Eivrach</title>
+<title>BUILD STATIC WITH HUGO | Eivrach</title>
 <meta name="keywords" content="">
-<meta name="description" content="">
+<meta name="description" content="
+HUGO :
+Hugo is a fast tool used to build websites, especially blogs, documentation sites, and personal websites. It is called a static site generator, which means it creates web pages using simple files instead of running a database every time someone visits the site. 🚀
+Why People Use Hugo
+
+Very fast (builds sites in seconds)
+No database needed
+Secure because it generates static pages
+Easy to deploy online
+Great for blogs and documentation
+
+HUGO INSTALLATION :
+UPDATING SYSTEM :
+First update your system by the command :
+sudo apt update">
 <meta name="author" content="Ayesha Khan">
-<link rel="canonical" href="http://localhost:1313/404.html">
+<link rel="canonical" href="http://localhost:1313/posts/hugo/">
 <link crossorigin="anonymous" href="/assets/css/stylesheet.da3211e5ef867bf2b75fd5a6515cfed7195c011e8ab735694e203810a827097b.css" integrity="sha256-2jIR5e&#43;Ge/K3X9WmUVz&#43;1xlcAR6KtzVpTiA4EKgnCXs=" rel="preload stylesheet" as="style">
 <link rel="icon" href="http://localhost:1313/favicon.ico">
 <link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/favicon-16x16.png">
@@ -18,7 +32,7 @@
 <link rel="mask-icon" href="http://localhost:1313/safari-pinned-tab.svg">
 <meta name="theme-color" content="#2e2e33">
 <meta name="msapplication-TileColor" content="#2e2e33">
-<link rel="alternate" hreflang="en" href="http://localhost:1313/404.html">
+<link rel="alternate" hreflang="en" href="http://localhost:1313/posts/hugo/">
 <noscript>
     <style>
         #theme-toggle,
@@ -72,7 +86,7 @@
 
 </script>
 </head>
-<body class="list" id="top">
+<body id="top">
     <header class="header">
     <nav class="nav">
         <div class="logo">
@@ -110,7 +124,105 @@
     </nav>
 </header>
 <main class="main">
-<div class="not-found">404</div>
+
+<article class="post-single">
+  <header class="post-header">
+    
+    <h1 class="post-title entry-hint-parent">
+      BUILD STATIC WITH HUGO
+    </h1>
+    <div class="post-meta"><span title='2026-02-27 12:33:47 +0500 PKT'>February 27, 2026</span>&nbsp;·&nbsp;<span>Ayesha Khan</span>
+
+</div>
+  </header> 
+  <div class="post-content"><p><img alt="Alt text for the image" loading="lazy" src="/images/b1.png"></p>
+<h2 id="hugo-">HUGO :<a hidden class="anchor" aria-hidden="true" href="#hugo-">#</a></h2>
+<p>Hugo is a fast tool used to build websites, especially blogs, documentation sites, and personal websites. It is called a static site generator, which means it creates web pages using simple files instead of running a database every time someone visits the site. 🚀</p>
+<h3 id="why-people-use-hugo">Why People Use Hugo<a hidden class="anchor" aria-hidden="true" href="#why-people-use-hugo">#</a></h3>
+<ul>
+<li>Very fast (builds sites in seconds)</li>
+<li>No database needed</li>
+<li>Secure because it generates static pages</li>
+<li>Easy to deploy online</li>
+<li>Great for blogs and documentation</li>
+</ul>
+<h2 id="hugo-installation-">HUGO INSTALLATION :<a hidden class="anchor" aria-hidden="true" href="#hugo-installation-">#</a></h2>
+<h3 id="updating-system-">UPDATING SYSTEM :<a hidden class="anchor" aria-hidden="true" href="#updating-system-">#</a></h3>
+<p>First update your system by the command :
+<strong>sudo apt update</strong></p>
+<h3 id="installing-hugo-">INSTALLING HUGO :<a hidden class="anchor" aria-hidden="true" href="#installing-hugo-">#</a></h3>
+<p>Then for installation of HUGO use the command :
+<strong>sudo apt install hugo</strong></p>
+<h3 id="check-whether-hugo-is-installed-or-not-">CHECK WHETHER HUGO IS INSTALLED OR NOT :<a hidden class="anchor" aria-hidden="true" href="#check-whether-hugo-is-installed-or-not-">#</a></h3>
+<p>Hugo installation can be checked through this command :
+<strong>hugo version</strong></p>
+<h3 id="for-example-">FOR EXAMPLE :<a hidden class="anchor" aria-hidden="true" href="#for-example-">#</a></h3>
+<p><img alt="Alt text for the image" loading="lazy" src="/images/B2.png"></p>
+<ul>
+<li>This shows that HUGO has been successfully installed.</li>
+</ul>
+<h2 id="creating-a-hugo-site--">CREATING A HUGO SITE  :<a hidden class="anchor" aria-hidden="true" href="#creating-a-hugo-site--">#</a></h2>
+<p>Once HUGO is properly installed , we can use the command :
+<strong>hugo new site blog</strong></p>
+<p>Change the name of your blog accordingly.</p>
+<h2 id="setting-the-theme-">SETTING THE THEME :<a hidden class="anchor" aria-hidden="true" href="#setting-the-theme-">#</a></h2>
+<p>After this navigate to your site directory :</p>
+<pre tabindex="0"><code>cd blog 
+</code></pre><p>After this initialize <strong>GITHUB</strong> to manage themes properly.
+Then choose any theme from the HUGO THEMES and copy its repository link.
+Using this command :</p>
+<pre tabindex="0"><code>git submodule add github-url-to-theme themes/theme-name
+</code></pre><p><img alt="Alt text for the image" loading="lazy" src="/images/b3.png"></p>
+<p>Then open the file <strong>hugo.tmol</strong> file and add your respective theme.
+For example :</p>
+<p><img alt="Alt text for the image" loading="lazy" src="/images/b4.png"></p>
+<p>Without this change , HUGO won&rsquo;t apply the theme design.</p>
+<h2 id="create-your-first-post-">CREATE YOUR FIRST POST :<a hidden class="anchor" aria-hidden="true" href="#create-your-first-post-">#</a></h2>
+<p>Generate a new post using command :</p>
+<pre tabindex="0"><code>hugo new posts/Firstpost.md
+</code></pre><p>Edit the Markdown file in posts such as</p>
+<p><img alt="Alt text for the image" loading="lazy" src="/images/b5.png"></p>
+<h2 id="start-the-hugo-server-">START THE HUGO SERVER :<a hidden class="anchor" aria-hidden="true" href="#start-the-hugo-server-">#</a></h2>
+<p>Run the command :</p>
+<pre tabindex="0"><code>hugo server --noHTTPCache
+</code></pre><p>Now before pressing ctrl+C , visit http://localhost:1313 and your website will be running locally.</p>
+<h2 id="deploying-to-github-">DEPLOYING TO GITHUB :<a hidden class="anchor" aria-hidden="true" href="#deploying-to-github-">#</a></h2>
+<p>To deploy your site on GITHUB follow the given steps :</p>
+<ul>
+<li>Open GITHUB.</li>
+<li>Create a new Repository.</li>
+<li>And give it a name in this order :</li>
+</ul>
+<pre tabindex="0"><code>username.github.io
+</code></pre><h2 id="upload-the-site-to-github-">UPLOAD THE SITE TO GITHUB :<a hidden class="anchor" aria-hidden="true" href="#upload-the-site-to-github-">#</a></h2>
+<p>Connect your local website to <strong>GITHUB REPOSITORY</strong>
+By using the given command :</p>
+<pre tabindex="0"><code>git remote add origin https://github.com/&lt;your-username&gt;/&lt;your-username&gt;.github.io
+</code></pre><p>For example :</p>
+<pre tabindex="0"><code>git remote add origin https://github.com/eivrach/eivrach.github.io
+</code></pre><p>Lastly Push your site to GITHUB through this command :</p>
+<pre tabindex="0"><code>git push -u origin master
+</code></pre><h2 id="enable-github-pages-">ENABLE GITHUB PAGES :<a hidden class="anchor" aria-hidden="true" href="#enable-github-pages-">#</a></h2>
+<p>In the settings tab of your repository ,Inside the &ldquo;BUILD AND DEPLOYMENT&rdquo; section change the source to &ldquo;GITHUB ACTIONS&rdquo;.</p>
+<h2 id="configure-github-workflow-">CONFIGURE GITHUB WORKFLOW :<a hidden class="anchor" aria-hidden="true" href="#configure-github-workflow-">#</a></h2>
+<p>Inside your ACTION TAB , search for HUGO.
+Create a workflow and configure that file.
+And also change your HUGO VERSION in that file according to your HUGO VERSION</p>
+<p><img alt="Alt text for the image" loading="lazy" src="/images/B6.png"></p>
+<p>After this commit the change and the workflow will run successfully and your site will be launched at</p>
+<pre tabindex="0"><code>username.github.io
+</code></pre><p>Finally ,open pages in settings tab there you&rsquo;ll see your site running successfully</p>
+<p>Hugo is a fast and efficient static site generator used to build websites and blogs using simple Markdown files. It generates complete static pages without requiring a database or backend. Because of this, Hugo websites are secure, lightweight, and very fast to load.</p>
+<p><strong>GOOD LUCK</strong></p>
+
+
+  </div>
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+    </ul>
+  </footer>
+</article>
     </main>
     
 <footer class="footer">
