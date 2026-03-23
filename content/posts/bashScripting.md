@@ -322,14 +322,10 @@ A file or command used to schedule CRONJOBS.
 3. crontab -r --> To delete all scheduled CRONJOBS.
 
 ### BASIC FORMATE OF CRONJOB :
-
+```
 * * * * * /path/to/script.sh
-│ │ │ │ │
-│ │ │ │ └── Day of week (0-7)
-│ │ │ └──── Month (1-12)
-│ │ └────── Day of month (1-31)
-│ └──────── Hour (0-23)
-└────────── Minute (0-59)
+```
+MINUTES(0 - 59) | HOUR(0 - 23)  | DAY OF MONTH(1 - 31) | MONTH(1 - 12) | DAY OF WEEK(0 - 7)
 
 ## CONCLUSION : 
 
