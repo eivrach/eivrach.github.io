@@ -2,6 +2,12 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>http://localhost:1313/posts/bashscripting/</loc>
+    <lastmod>2026-03-19T23:59:45+05:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/posts/</loc>
+    <lastmod>2026-03-19T23:59:45+05:00</lastmod>
+  </url><url>
     <loc>http://localhost:1313/</loc>
     <lastmod>2026-03-03T10:29:45+05:00</lastmod>
   </url><url>
@@ -9,9 +15,6 @@
     <lastmod>2026-03-03T10:29:45+05:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/posts/hugo/</loc>
-    <lastmod>2026-02-27T12:33:47+05:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/posts/</loc>
     <lastmod>2026-02-27T12:33:47+05:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/posts/linuxcommands/</loc>

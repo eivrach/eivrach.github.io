@@ -256,7 +256,7 @@ TYPES OF LOOPS IN BASH :
 2. WHILE LOOP
 3. UNTIL LOOP
 
-#### FOR LOOP :
+### FOR LOOP :
 
 This loop is used when the ending condition is known . They are useful for repeating tasks a specific number of times.
 
@@ -293,3 +293,45 @@ Until loops are similar to while loops, but they execute until a specified condi
 **OUTPUT:**
 
 ![Alt text for the image](/images/bash16.png)
+
+### CRON SCHEDULING SYSTEM : 
+### CRONJOB :
+CronJob are scheduled tasks that allows you to run scripts and commands at specific intervals.
+
+### WHY USE CRONJOBS :
+To automate repetitive tasks and to ensure that they run at scheduled times without manual intervention.
+
+#### FOR EXAMPLE :
+Backing up files and sending email reports etc
+
+### HOW DOES CRONJOB WORK ?
+CronJob uses a daemon(a background process) called **CRON** to execute scheduled tasks.
+And the configuration of these tasks is stored in a file called **CRONTAB**.
+
+### CRON :
+- A daemon(a background process) in LINUX.
+- It runs automatically in the background.
+- Its job is to execute scheduled tasks at specific intervals.
+
+### CRONTAB : 
+A file or command used to schedule CRONJOBS.
+
+#### CRONTAB COMMANDS :
+1. crontab -e --> To edit crontab file by adding CRONJOBS.
+2. crontab -l --> To view all your scheduled CRONJOBS.
+3. crontab -r --> To delete all scheduled CRONJOBS.
+
+### BASIC FORMATE OF CRONJOB :
+
+* * * * * /path/to/script.sh
+│ │ │ │ │
+│ │ │ │ └── Day of week (0-7)
+│ │ │ └──── Month (1-12)
+│ │ └────── Day of month (1-31)
+│ └──────── Hour (0-23)
+└────────── Minute (0-59)
+
+## CONCLUSION : 
+
+Bash scripting is a simple and powerful way to automate tasks in Linux. It helps save time, reduce effort, and improve efficiency by turning repetitive commands into automated processes.
+

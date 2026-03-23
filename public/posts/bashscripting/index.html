@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto" data-theme="auto">
+
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="noindex, nofollow">
+<title>BASH SCRIPTING: TURN COMMANDS INTO SMART AUTOMATION | Eivrach</title>
+<meta name="keywords" content="">
+<meta name="description" content="
+BASH SCRIPTING
+BASH :
+BASH stands for BOURNE AGAIN SHELL (LINUX OR UNIX SHELL).
+SCRIPT :
+A file containing a sequence of instructions executed by the BASH PROGRAM step by step.
+A Bash script is a plain text file which contains a series of commands. These commands are a mixture of commands we would normally type ourselves on the command line (such as ls or cd) and commands we could type on the command line but generally wouldn&rsquo;t . An important point to remember though is:">
+<meta name="author" content="Ayesha Khan">
+<link rel="canonical" href="http://localhost:1313/posts/bashscripting/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.da3211e5ef867bf2b75fd5a6515cfed7195c011e8ab735694e203810a827097b.css" integrity="sha256-2jIR5e&#43;Ge/K3X9WmUVz&#43;1xlcAR6KtzVpTiA4EKgnCXs=" rel="preload stylesheet" as="style">
+<link rel="icon" href="http://localhost:1313/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/favicon-32x32.png">
+<link rel="apple-touch-icon" href="http://localhost:1313/apple-touch-icon.png">
+<link rel="mask-icon" href="http://localhost:1313/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" hreflang="en" href="http://localhost:1313/posts/bashscripting/">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --code-block-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+                color-scheme: dark;
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .toc {
+                background: var(--entry);
+            }
+        }
+
+        @media (prefers-color-scheme: light) {
+            .list::-webkit-scrollbar-thumb {
+                border-color: var(--code-bg);
+            }
+        }
+
+    </style>
+</noscript>
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.querySelector("html").dataset.theme = 'dark';
+    } else if (localStorage.getItem("pref-theme") === "light") {
+       document.querySelector("html").dataset.theme = 'light';
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.querySelector("html").dataset.theme = 'dark';
+    } else {
+        document.querySelector("html").dataset.theme = 'light';
+    }
+
+</script>
+</head>
+<body id="top">
+    <header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="http://localhost:1313/" accesskey="h" title="Eivrach (Alt + H)">Eivrach</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <ul id="menu">
+            <li>
+                <a href="http://localhost:1313/posts" title="Archives">
+                    <span>Archives</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+    
+    <h1 class="post-title entry-hint-parent">
+      BASH SCRIPTING: TURN COMMANDS INTO SMART AUTOMATION
+    </h1>
+    <div class="post-meta"><span title='2026-03-19 23:59:45 +0500 PKT'>March 19, 2026</span>&nbsp;·&nbsp;<span>Ayesha Khan</span>
+
+</div>
+  </header> 
+  <div class="post-content"><p><img alt="Alt text for the image" loading="lazy" src="/images/bash1.png"></p>
+<h1 id="bash-scripting">BASH SCRIPTING<a hidden class="anchor" aria-hidden="true" href="#bash-scripting">#</a></h1>
+<h4 id="bash-">BASH :<a hidden class="anchor" aria-hidden="true" href="#bash-">#</a></h4>
+<p>BASH stands for <strong>BOURNE AGAIN SHELL (LINUX OR UNIX SHELL)</strong>.</p>
+<h4 id="script-">SCRIPT :<a hidden class="anchor" aria-hidden="true" href="#script-">#</a></h4>
+<p>A file containing a sequence of instructions executed by the <strong>BASH PROGRAM</strong> step by step.</p>
+<p>A Bash script is a plain text file which contains a series of commands. These commands are a mixture of commands we would normally type ourselves on the command line (such as ls or cd) and commands we could type on the command line but generally wouldn&rsquo;t . An important point to remember though is:</p>
+<p>Anything you can run normally on the command line can be put into a script and it will do exactly the same thing.</p>
+<h2 id="benefits-of-bash-scripting-">BENEFITS OF BASH SCRIPTING :<a hidden class="anchor" aria-hidden="true" href="#benefits-of-bash-scripting-">#</a></h2>
+<h3 id="1--automation-">1 . AUTOMATION :<a hidden class="anchor" aria-hidden="true" href="#1--automation-">#</a></h3>
+<p>Shell scripts allow you to automate repetitive tasks and processes, saving time and reducing the risk of errors that can occur with manual execution - Letting the computer performs tasks without human intervention.</p>
+<h3 id="2--accessibility-">2 . ACCESSIBILITY :<a hidden class="anchor" aria-hidden="true" href="#2--accessibility-">#</a></h3>
+<p>Shell scripts are easy to write and don&rsquo;t require any special tools or software. They can be edited using any text editor, and most operating systems have a built-in shell interpreter.</p>
+<h2 id="steps-for-doing-bash-scripting-">STEPS FOR DOING BASH SCRIPTING :<a hidden class="anchor" aria-hidden="true" href="#steps-for-doing-bash-scripting-">#</a></h2>
+<h3 id="step-1--determining-your-shell-type-in-linux-">STEP 1 : DETERMINING YOUR SHELL TYPE IN LINUX :<a hidden class="anchor" aria-hidden="true" href="#step-1--determining-your-shell-type-in-linux-">#</a></h3>
+<p>Your shell type in LINUX can be determined through this command :</p>
+<pre tabindex="0"><code>ps
+</code></pre><p><strong>ps</strong> stands for process status.</p>
+<p><img alt="Alt text for the image" loading="lazy" src="/images/bash2.png"></p>
+<p>Mine is bash , you should check yours through this way.</p>
+<h3 id="step-2--creating-a-script-file-">STEP 2 : CREATING A SCRIPT FILE :<a hidden class="anchor" aria-hidden="true" href="#step-2--creating-a-script-file-">#</a></h3>
+<p>Firstly , we’ll create a script file through this command :</p>
+<pre tabindex="0"><code>nano file.sh
+</code></pre><p>And the file name must end with <strong>“sh“</strong> to show that this file is a <strong>BASH SCRIPT</strong>. This also helps in distinguishing scripts from other files.</p>
+<p><strong>nano</strong> is a <strong>TERMINAL BASED TEXT EDITOR</strong>. It allows you to create, view, and edit text files directly from the command line.</p>
+<h3 id="step-3--writing-a-script-">STEP 3 : WRITING A SCRIPT :<a hidden class="anchor" aria-hidden="true" href="#step-3--writing-a-script-">#</a></h3>
+<p><strong>SHEBANG:</strong> SHEBANG tells the shell to execute your file via a <strong>BASH SHELL</strong>. 1st line of your BASH SCRIPT should be :</p>
+<pre tabindex="0"><code>#!/bin/bash
+</code></pre><p><strong>/bin/bash</strong> shows that bin is a folder that contains important system commands and bash is a file.</p>
+<p><strong>bin</strong> —&gt; binary because programs are stored as binary executable files and not machine code.</p>
+<p><img alt="Alt text for the image" loading="lazy" src="/images/bash3.png"></p>
+<p>You can write anything in the script.</p>
+<h3 id="step-4--executing-the-script-">STEP 4 : EXECUTING THE SCRIPT :<a hidden class="anchor" aria-hidden="true" href="#step-4--executing-the-script-">#</a></h3>
+<p>Execute this file through this command :</p>
+<pre tabindex="0"><code>chmod +x file.sh
+</code></pre><p><strong>chmod</strong> refers to change mode</p>
+<ul>
+<li><strong>chmod:</strong> Command used to change the permission of the file in <strong>LINUX</strong> .</li>
+<li><strong>+x:</strong> It gives permission to the owner of the file to execute it .</li>
+</ul>
+<h3 id="step-5--running-the-bash-script-">STEP 5 : RUNNING THE BASH SCRIPT :<a hidden class="anchor" aria-hidden="true" href="#step-5--running-the-bash-script-">#</a></h3>
+<p>A script can be run through this command :</p>
+<pre tabindex="0"><code>./file.sh
+</code></pre><p>./ : looks for the file in the current directory.</p>
+<p><img alt="Alt text for the image" loading="lazy" src="/images/bash4.png"></p>
+<h3 id="step-6--comments-in-bash-scripting-">STEP 6 : COMMENTS IN BASH SCRIPTING :<a hidden class="anchor" aria-hidden="true" href="#step-6--comments-in-bash-scripting-">#</a></h3>
+<p>Comments in bash scripting starts with a <strong>BASH (#)</strong> . It is helpful in documenting the code .</p>
+<h3 id="step-7--variables-in-bash-scripting-">STEP 7 : VARIABLES IN BASH SCRIPTING :<a hidden class="anchor" aria-hidden="true" href="#step-7--variables-in-bash-scripting-">#</a></h3>
+<h4 id="variables-">VARIABLES :<a hidden class="anchor" aria-hidden="true" href="#variables-">#</a></h4>
+<p>Variables are used to store data and they also lets you read , access and manipulate data throughout your script.And there are no data types in bash scripting .</p>
+<p>In <strong>BASH SCRIPTING</strong>, a variable is capable of storing NUMERIC VALUES , INDIVIDUAL CHARACTERS or STRING OF CHARACTERS .</p>
+<h5 id="step-1--storing-data-">STEP 1 : STORING DATA :<a hidden class="anchor" aria-hidden="true" href="#step-1--storing-data-">#</a></h5>
+<p>We can store data directly in variables but that data should be enclosed in double quotes and there should be no space in between the equal sign and stored data .</p>
+<p>such as :</p>
+<pre tabindex="0"><code>variablename=&#34;value&#34;
+</code></pre><p><img alt="Alt text for the image" loading="lazy" src="/images/bash5.png"></p>
+<h5 id="step-2--accessing-data-">STEP 2 : ACCESSING DATA :<a hidden class="anchor" aria-hidden="true" href="#step-2--accessing-data-">#</a></h5>
+<p>Retrieving the value that is already stored in a variable , array , file or command output .</p>
+<p><strong>OR</strong></p>
+<p>Accessing data is the process of reading or using stored information.</p>
+<p><strong>$</strong> = It is required to access an existing variable ‘s value .</p>
+<p><strong>INPUT:</strong></p>
+<p><img alt="Alt text for the image" loading="lazy" src="/images/bash6.png"></p>
+<p><strong>OUTPUT:</strong></p>
+<p><img alt="Alt text for the image" loading="lazy" src="/images/bash7.png"></p>
+<h5 id="step-3--taking-input-from-the-user-">STEP 3 : TAKING INPUT FROM THE USER :<a hidden class="anchor" aria-hidden="true" href="#step-3--taking-input-from-the-user-">#</a></h5>
+<p>It is done using this command:</p>
+<pre tabindex="0"><code>read
+</code></pre><p><strong>INPUT:</strong></p>
+<p><img alt="Alt text for the image" loading="lazy" src="/images/bash8.png"></p>
+<p><strong>OUTPUT:</strong></p>
+<p><img alt="Alt text for the image" loading="lazy" src="/images/bash9.png"></p>
+<h3 id="common-variable-operations-">COMMON VARIABLE OPERATIONS :<a hidden class="anchor" aria-hidden="true" href="#common-variable-operations-">#</a></h3>
+<p>Variables can be used in various operations such as : concatenation and arithmetic .</p>
+<h4 id="concatenation-">CONCATENATION :<a hidden class="anchor" aria-hidden="true" href="#concatenation-">#</a></h4>
+<p><strong>INPUT:</strong></p>
+<p><img alt="Alt text for the image" loading="lazy" src="/images/bash01.png"></p>
+<p><strong>OUTPUT:</strong></p>
+<p><img alt="Alt text for the image" loading="lazy" src="/images/bash02.png"></p>
+<h3 id="arithmetic-">ARITHMETIC :<a hidden class="anchor" aria-hidden="true" href="#arithmetic-">#</a></h3>
+<p>For this you must use double brackets like : <strong>((hi))</strong></p>
+<p><strong>INPUT:</strong></p>
+<p><img alt="Alt text for the image" loading="lazy" src="/images/bash03.png"></p>
+<p><strong>OUTPUT:</strong></p>
+<p><img alt="Alt text for the image" loading="lazy" src="/images/bash04.png"></p>
+<h3 id="integer-comparison-">INTEGER COMPARISON :<a hidden class="anchor" aria-hidden="true" href="#integer-comparison-">#</a></h3>
+<p>In integer comparison , we use <strong>SQUARE BRACKETS []</strong> , they are called <strong>TEST COMMANDS</strong> in <strong>BASH</strong> .</p>
+<p>They are used to check conditions like COMPARING NUMBERS , STRINGS OR CHECKING THE EXISTENCE OF A FILE .</p>
+<ul>
+<li>
+<p>-eq = is equal to if [ “$a “ -eq “$b” ]</p>
+</li>
+<li>
+<p>-ne = is not equal to if [ “$a” -ne “$b” }</p>
+</li>
+<li>
+<p>-gt = is greater than if [ “$a” -gt “$b” ]</p>
+</li>
+<li>
+<p>-ge = is greater than or equal to if [ “$a” -ge “$b” ]</p>
+</li>
+<li>
+<p>-lt = is less than if [ “$a” -lt “$b” ]</p>
+</li>
+<li>
+<p>-le = is less than or equal than if [ “$a” -le “$b” ]</p>
+</li>
+</ul>
+<h3 id="arithmetic-comparison-">ARITHMETIC COMPARISON :<a hidden class="anchor" aria-hidden="true" href="#arithmetic-comparison-">#</a></h3>
+<p>Here we would use double brackets</p>
+<ul>
+<li>
+<p>&lt; is less than - ( (“$a” &lt; “$b” ) )</p>
+</li>
+<li>
+<p>&lt;= is less than or equal - ( ( “$a” &lt;= “$b” ) )</p>
+</li>
+<li>
+<blockquote>
+<p>is greater than - ( (“$a” &gt; “$b” ) )</p>
+</blockquote>
+</li>
+<li>
+<blockquote>
+<p>= is greater than or equal to - ( ( “$a” &gt;= “$b” ) )</p>
+</blockquote>
+</li>
+</ul>
+<h3 id="string-comparison-">STRING COMPARISON :<a hidden class="anchor" aria-hidden="true" href="#string-comparison-">#</a></h3>
+<ul>
+<li>
+<p>= is equal to if [ “$a” = “$b” ]</p>
+</li>
+<li>
+<p>== is equal to if [ “$a” == “$b” ]</p>
+</li>
+<li>
+<p>!= is not equal to if [ “$a” != “$b” ]</p>
+</li>
+<li>
+<p>&lt; is less than , in ASCII alphabetical order if [ [ “$a “ &lt; “$b” ]]</p>
+</li>
+<li>
+<blockquote>
+<p>is greater than , in ASCII alphabetical order if [ [ “$a” &gt; “$b ] ]</p>
+</blockquote>
+</li>
+<li>
+<p>-z string is null , that is , has zero length if [-z “$a“]</p>
+</li>
+</ul>
+<h3 id="decision-control-in-bash-scripts-">DECISION CONTROL IN BASH SCRIPTS :<a hidden class="anchor" aria-hidden="true" href="#decision-control-in-bash-scripts-">#</a></h3>
+<h4 id="if-block-">if BLOCK :<a hidden class="anchor" aria-hidden="true" href="#if-block-">#</a></h4>
+<ul>
+<li>If condition is enclosed in <strong>SQUARE BRACKETS []</strong>.</li>
+<li>Statements ends with <strong>“fi“</strong> which is <strong>“if“</strong> spelled backwards marking the end of <strong>“if“</strong> block.</li>
+<li>In Bash , spaces around [ ] are compulsory , without them , the if block breaks.</li>
+</ul>
+<p><strong>INPUT:</strong></p>
+<p><img alt="Alt text for the image" loading="lazy" src="/images/bash05.png"></p>
+<p><strong>OUTPUT:</strong></p>
+<p><img alt="Alt text for the image" loading="lazy" src="/images/bash06.png"></p>
+<h4 id="if-else-block-">IF-ELSE BLOCK :<a hidden class="anchor" aria-hidden="true" href="#if-else-block-">#</a></h4>
+<p><strong>INPUT:</strong></p>
+<p><img alt="Alt text for the image" loading="lazy" src="/images/bash07.png"></p>
+<p><strong>OUTPUT:</strong></p>
+<p><img alt="Alt text for the image" loading="lazy" src="/images/bash08.png"></p>
+<h4 id="nested-if-else-">NESTED IF-ELSE :<a hidden class="anchor" aria-hidden="true" href="#nested-if-else-">#</a></h4>
+<p><strong>INPUT:</strong></p>
+<p><img alt="Alt text for the image" loading="lazy" src="/images/bash09.png"></p>
+<p><strong>OUTPUT:</strong></p>
+<p><img alt="Alt text for the image" loading="lazy" src="/images/bash10.png"></p>
+<h3 id="loops-">LOOPS :<a hidden class="anchor" aria-hidden="true" href="#loops-">#</a></h3>
+<p>TYPES OF LOOPS IN BASH :</p>
+<ol>
+<li>FOR LOOP</li>
+<li>WHILE LOOP</li>
+<li>UNTIL LOOP</li>
+</ol>
+<h4 id="for-loop-">FOR LOOP :<a hidden class="anchor" aria-hidden="true" href="#for-loop-">#</a></h4>
+<p>This loop is used when the ending condition is known . They are useful for repeating tasks a specific number of times.</p>
+<p>The <strong>“for“</strong> keyword is followed by a variable name, a range of values, “do“ keyword marks the start of the loop block and “done“ keyword indicates the end of the for loop block.</p>
+<p><strong>INPUT:</strong></p>
+<p><img alt="Alt text for the image" loading="lazy" src="/images/bash11.png"></p>
+<p><strong>OUTPUT:</strong></p>
+<p><img alt="Alt text for the image" loading="lazy" src="/images/bash12.png"></p>
+<h3 id="while-loop-">WHILE LOOP :<a hidden class="anchor" aria-hidden="true" href="#while-loop-">#</a></h3>
+<p>While loops execute a block of code as long as a specified condition is true.</p>
+<p><strong>INPUT:</strong></p>
+<p><img alt="Alt text for the image" loading="lazy" src="/images/bash13.png"></p>
+<p><strong>OUTPUT:</strong></p>
+<p><img alt="Alt text for the image" loading="lazy" src="/images/bash14.png"></p>
+<h3 id="until-loop-">UNTIL LOOP :<a hidden class="anchor" aria-hidden="true" href="#until-loop-">#</a></h3>
+<p>Until loops are similar to while loops, but they execute until a specified condition becomes true.</p>
+<p><strong>INPUT:</strong></p>
+<p><img alt="Alt text for the image" loading="lazy" src="/images/bash15.png"></p>
+<p><strong>OUTPUT:</strong></p>
+<p><img alt="Alt text for the image" loading="lazy" src="/images/bash16.png"></p>
+
+
+  </div>
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+    </ul>
+  </footer>
+</article>
+    </main>
+    
+<footer class="footer">
+        <span>&copy; 2026 <a href="http://localhost:1313/">Eivrach</a></span> · 
+
+    <span>
+        Powered by
+        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
+        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
+    </span>
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu');
+    if (menu) {
+        
+        const scrollPosition = localStorage.getItem("menu-scroll-position");
+        if (scrollPosition) {
+            menu.scrollLeft = parseInt(scrollPosition, 10);
+        }
+        
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        const html = document.querySelector("html");
+        if (html.dataset.theme === "dark") {
+            html.dataset.theme = 'light';
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            html.dataset.theme = 'dark';
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+</body>
+
+</html>
