@@ -217,65 +217,59 @@ A Bash script is a plain text file which contains a series of commands. These co
 <p>They are used to check conditions like COMPARING NUMBERS , STRINGS OR CHECKING THE EXISTENCE OF A FILE .</p>
 <ul>
 <li>
-<p>-eq = is equal to if [ “$a “ -eq “$b” ]</p>
+<p>(-eq) = is equal to if [ “$a “ -eq “$b” ]</p>
 </li>
 <li>
-<p>-ne = is not equal to if [ “$a” -ne “$b” }</p>
+<p>(-ne) = is not equal to if [ “$a” -ne “$b” }</p>
 </li>
 <li>
-<p>-gt = is greater than if [ “$a” -gt “$b” ]</p>
+<p>(-gt) = is greater than if [ “$a” -gt “$b” ]</p>
 </li>
 <li>
-<p>-ge = is greater than or equal to if [ “$a” -ge “$b” ]</p>
+<p>(-ge) = is greater than or equal to if [ “$a” -ge “$b” ]</p>
 </li>
 <li>
-<p>-lt = is less than if [ “$a” -lt “$b” ]</p>
+<p>(-lt) = is less than if [ “$a” -lt “$b” ]</p>
 </li>
 <li>
-<p>-le = is less than or equal than if [ “$a” -le “$b” ]</p>
+<p>(-le) = is less than or equal than if [ “$a” -le “$b” ]</p>
 </li>
 </ul>
 <h3 id="arithmetic-comparison-">ARITHMETIC COMPARISON :<a hidden class="anchor" aria-hidden="true" href="#arithmetic-comparison-">#</a></h3>
 <p>Here we would use double brackets</p>
 <ul>
 <li>
-<p>&lt; is less than - ( (“$a” &lt; “$b” ) )</p>
+<p>(&lt;) is less than - ( (“$a” &lt; “$b” ) )</p>
 </li>
 <li>
-<p>&lt;= is less than or equal - ( ( “$a” &lt;= “$b” ) )</p>
+<p>(&lt;=) is less than or equal - ( ( “$a” &lt;= “$b” ) )</p>
 </li>
 <li>
-<blockquote>
-<p>is greater than - ( (“$a” &gt; “$b” ) )</p>
-</blockquote>
+<p>(&gt;) is greater than - ( (“$a” &gt; “$b” ) )</p>
 </li>
 <li>
-<blockquote>
-<p>= is greater than or equal to - ( ( “$a” &gt;= “$b” ) )</p>
-</blockquote>
+<p>(&gt;=) is greater than or equal to - ( ( “$a” &gt;= “$b” ) )</p>
 </li>
 </ul>
 <h3 id="string-comparison-">STRING COMPARISON :<a hidden class="anchor" aria-hidden="true" href="#string-comparison-">#</a></h3>
 <ul>
 <li>
-<p>= is equal to if [ “$a” = “$b” ]</p>
+<p>(=) is equal to if [ “$a” = “$b” ]</p>
 </li>
 <li>
-<p>== is equal to if [ “$a” == “$b” ]</p>
+<p>(==) is equal to if [ “$a” == “$b” ]</p>
 </li>
 <li>
-<p>!= is not equal to if [ “$a” != “$b” ]</p>
+<p>(!=) is not equal to if [ “$a” != “$b” ]</p>
 </li>
 <li>
-<p>&lt; is less than , in ASCII alphabetical order if [ [ “$a “ &lt; “$b” ]]</p>
+<p>(&lt;) is less than , in ASCII alphabetical order if [ [ “$a “ &lt; “$b” ]]</p>
 </li>
 <li>
-<blockquote>
-<p>is greater than , in ASCII alphabetical order if [ [ “$a” &gt; “$b ] ]</p>
-</blockquote>
+<p>(&gt;) is greater than , in ASCII alphabetical order if [ [ “$a” &gt; “$b ] ]</p>
 </li>
 <li>
-<p>-z string is null , that is , has zero length if [-z “$a“]</p>
+<p>(-z) string is null , that is , has zero length if [-z “$a“]</p>
 </li>
 </ul>
 <h3 id="decision-control-in-bash-scripts-">DECISION CONTROL IN BASH SCRIPTS :<a hidden class="anchor" aria-hidden="true" href="#decision-control-in-bash-scripts-">#</a></h3>

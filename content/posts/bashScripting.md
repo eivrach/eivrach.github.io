@@ -176,29 +176,29 @@ In integer comparison , we use **SQUARE BRACKETS []** , they are called **TEST C
 
 They are used to check conditions like COMPARING NUMBERS , STRINGS OR CHECKING THE EXISTENCE OF A FILE .
 
-- -eq = is equal to if [ “$a “ -eq “$b” ]
+- (-eq) = is equal to if [ “$a “ -eq “$b” ]
 
-- -ne = is not equal to if [ “$a” -ne “$b” }
+- (-ne) = is not equal to if [ “$a” -ne “$b” }
 
-- -gt = is greater than if [ “$a” -gt “$b” ]
+- (-gt) = is greater than if [ “$a” -gt “$b” ]
 
-- -ge = is greater than or equal to if [ “$a” -ge “$b” ]
+- (-ge) = is greater than or equal to if [ “$a” -ge “$b” ]
 
-- -lt = is less than if [ “$a” -lt “$b” ]
+- (-lt) = is less than if [ “$a” -lt “$b” ]
 
-- -le = is less than or equal than if [ “$a” -le “$b” ]
+- (-le) = is less than or equal than if [ “$a” -le “$b” ]
 
 ### ARITHMETIC COMPARISON :
 
 Here we would use double brackets
 
-- < is less than - ( (“$a” < “$b” ) )
+- (<) is less than - ( (“$a” < “$b” ) )
 
-- <= is less than or equal - ( ( “$a” <= “$b” ) )
+- (<=) is less than or equal - ( ( “$a” <= “$b” ) )
 
-- > is greater than - ( (“$a” > “$b” ) )
+- (>) is greater than - ( (“$a” > “$b” ) )
 
-- >= is greater than or equal to - ( ( “$a” >= “$b” ) )
+- (>=) is greater than or equal to - ( ( “$a” >= “$b” ) )
 
 ### STRING COMPARISON :
 
