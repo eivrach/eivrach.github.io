@@ -350,31 +350,8 @@ And the configuration of these tasks is stored in a file called <strong>CRONTAB<
 <li>crontab -r &ndash;&gt; To delete all scheduled CRONJOBS.</li>
 </ol>
 <h3 id="basic-formate-of-cronjob-">BASIC FORMATE OF CRONJOB :<a hidden class="anchor" aria-hidden="true" href="#basic-formate-of-cronjob-">#</a></h3>
-<ul>
-<li>
-<ul>
-<li>
-<ul>
-<li>
-<ul>
-<li>
-<ul>
-<li>/path/to/script.sh
-│ │ │ │ │
-│ │ │ │ └── Day of week (0-7)
-│ │ │ └──── Month (1-12)
-│ │ └────── Day of month (1-31)
-│ └──────── Hour (0-23)
-└────────── Minute (0-59)</li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
+<pre tabindex="0"><code>* * * * * /path/to/script.sh
+</code></pre><p>MINUTES(0 - 59) | HOUR(0 - 23)  | DAY OF MONTH(1 - 31) | MONTH(1 - 12) | DAY OF WEEK(0 - 7)</p>
 <h2 id="conclusion-">CONCLUSION :<a hidden class="anchor" aria-hidden="true" href="#conclusion-">#</a></h2>
 <p>Bash scripting is a simple and powerful way to automate tasks in Linux. It helps save time, reduce effort, and improve efficiency by turning repetitive commands into automated processes.</p>
 

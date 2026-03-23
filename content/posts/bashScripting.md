@@ -202,17 +202,17 @@ Here we would use double brackets
 
 ### STRING COMPARISON :
 
-- = is equal to if [ “$a” = “$b” ]
+- (=) is equal to if [ “$a” = “$b” ]
 
-- == is equal to if [ “$a” == “$b” ]
+- (==) is equal to if [ “$a” == “$b” ]
 
-- != is not equal to if [ “$a” != “$b” ]
+- (!=) is not equal to if [ “$a” != “$b” ]
 
-- < is less than , in ASCII alphabetical order if [ [ “$a “ < “$b” ]]
+- (<) is less than , in ASCII alphabetical order if [ [ “$a “ < “$b” ]]
 
-- > is greater than , in ASCII alphabetical order if [ [ “$a” > “$b ] ]
+- (>) is greater than , in ASCII alphabetical order if [ [ “$a” > “$b ] ]
 
-- -z string is null , that is , has zero length if [-z “$a“]
+- (-z) string is null , that is , has zero length if [-z “$a“]
 
 ### DECISION CONTROL IN BASH SCRIPTS :
 
