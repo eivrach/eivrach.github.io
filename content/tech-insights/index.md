@@ -5,11 +5,11 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta name="robots" content="noindex, nofollow">
-<title>Archives | eivrach</title>
+<title>Tech Insights | eivrach</title>
 <meta name="keywords" content="">
-<meta name="description" content="archives">
+<meta name="description" content="tech-insights">
 <meta name="author" content="">
-<link rel="canonical" href="http://localhost:1313/archives/">
+<link rel="canonical" href="http://localhost:1313/tech-insights/">
 <link crossorigin="anonymous" href="/assets/css/stylesheet.93f625d739f1d6a5c6f20c146bc6a8d26b233492b34b2220c54b12fd46a04ded.css" integrity="sha256-k/Yl1znx1qXG8gwUa8ao0msjNJKzSyIgxUsS/UagTe0=" rel="preload stylesheet" as="style">
 <link rel="icon" href="http://localhost:1313/favicon.ico">
 <link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/favicon-16x16.png">
@@ -18,7 +18,7 @@
 <link rel="mask-icon" href="http://localhost:1313/safari-pinned-tab.svg">
 <meta name="theme-color" content="#2e2e33">
 <meta name="msapplication-TileColor" content="#2e2e33">
-<link rel="alternate" hreflang="en" href="http://localhost:1313/archives/">
+<link rel="alternate" hreflang="en" href="http://localhost:1313/tech-insights/">
 <noscript>
     <style>
         #theme-toggle,
@@ -88,49 +88,49 @@
 
 <header class="page-header">
   <h1>
-    Archives
+    Tech Insights
   </h1>
 </header>
 
-<div class="archive-month">
-  <h3 class="archive-month-header" id="2026-February">
-    <a class="archive-header-link" href="#2026-February">February</a>
-    <sup class="archive-count">&nbsp;1</sup>
+<div class="tech-insights-month">
+  <h3 class="tech-insights-month-header" id="2026-February">
+    <a class="tech-insights-header-link" href="#2026-February">February</a>
+    <sup class="tech-insights-count">&nbsp;1</sup>
   </h3>
 
-  <div class="archive-posts">
+  <div class="tech-insights-posts">
 
-    <div class="archive-entry">
-      <h3 class="archive-entry-title entry-hint-parent">Firstpost
+    <div class="tech-insights-entry">
+      <h3 class="tech-insights-entry-title entry-hint-parent">Firstpost
       </h3>
-      <div class="archive-meta"><span title="2026-02-27 09:43:45 +0500 PKT">February 27, 2026</span>&nbsp;·&nbsp;1 min</div>
+      <div class="tech-insights-meta"><span title="2026-02-27 09:43:45 +0500 PKT">February 27, 2026</span>&nbsp;·&nbsp;1 min</div>
       <a class="entry-link" aria-label="post link to Firstpost" href="http://localhost:1313/posts/firstpost/"></a>
     </div>
 
   </div>
 </div>
-  <div class="archive-month">
-    <h3 class="archive-month-header" id="2025-September">
-      <a class="archive-header-link" href="#2025-September">September</a>
-      <sup class="archive-count">&nbsp;3</sup>
+  <div class="tech-insights-month">
+    <h3 class="tech-insights-month-header" id="2025-September">
+      <a class="tech-insights-header-link" href="#2025-September">September</a>
+      <sup class="tech-insights-count">&nbsp;3</sup>
     </h3>
-    <div class="archive-posts">
-      <div class="archive-entry">
-        <h3 class="archive-entry-title entry-hint-parent">LINUX COMMANDS
+    <div class="tech-insights-posts">
+      <div class="tech-insights-entry">
+        <h3 class="tech-insights-entry-title entry-hint-parent">LINUX COMMANDS
         </h3>
-        <div class="archive-meta"><span title='2025-10-17 09:30:09 +0500 PKT'>September 17, 2025</span>&nbsp;·&nbsp;4 min</div>
+        <div class="tech-insights-meta"><span title='2025-10-17 09:30:09 +0500 PKT'>September 17, 2025</span>&nbsp;·&nbsp;4 min</div>
         <a class="entry-link" aria-label="post link to LINUX COMMANDS" href="http://localhost:1313/posts/linux-commands/"></a>
       </div>
-      <div class="archive-entry">
-        <h3 class="archive-entry-title entry-hint-parent">GIT AND GITHUB GUIDE
+      <div class="tech-insights-entry">
+        <h3 class="tech-insights-entry-title entry-hint-parent">GIT AND GITHUB GUIDE
         </h3>
-        <div class="archive-meta"><span title='2025-10-10 09:43:45 +0500 PKT'>September 10, 2025</span>&nbsp;·&nbsp;3 min</div>
+        <div class="tech-insights-meta"><span title='2025-10-10 09:43:45 +0500 PKT'>September 10, 2025</span>&nbsp;·&nbsp;3 min</div>
         <a class="entry-link" aria-label="post link to GIT AND GITHUB GUIDE" href="http://localhost:1313/posts/git-and-github-guide/"></a>
       </div>
-      <div class="archive-entry">
-        <h3 class="archive-entry-title entry-hint-parent">HOW TO DO DUAL BOOTING ON WINDOWS 10
+      <div class="tech-insights-entry">
+        <h3 class="tech-insights-entry-title entry-hint-parent">HOW TO DO DUAL BOOTING ON WINDOWS 10
         </h3>
-        <div class="archive-meta"><span title='2025-10-03 09:43:45 +0500 PKT'>September 03, 2025</span>&nbsp;·&nbsp;1 min</div>
+        <div class="tech-insights-meta"><span title='2025-10-03 09:43:45 +0500 PKT'>September 03, 2025</span>&nbsp;·&nbsp;1 min</div>
         <a class="entry-link" aria-label="post link to HOW TO DO DUAL BOOTING ON WINDOWS 10" href="http://localhost:1313/posts/how-to-do-dual-booting-on-windows10/"></a>
       </div>
     </div>

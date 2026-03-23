@@ -29,11 +29,11 @@ imageHeight = 250
   url = "/about"
 
   [[params.profileMode.buttons]]
-  name = "Archives"
+  name = "Tech Insights"
   url = "/posts"
 
     
   [[menu.main]]
     identifier = "posts"
-    name       = "Archives"
+    name       = "Tech insights"
     url        = "/posts"
